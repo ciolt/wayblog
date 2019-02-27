@@ -1,0 +1,207 @@
+@import 'https://fonts.googleapis.com/css?family=Krub:500,500i,700,700i';
+
+:root, html, body, h1, h2, h3, h4, h5, h6, * {
+  font-family: 'Krub', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20.25px !important;
+}
+
+.inline-arrow {
+  display: inline-block;
+}
+
+.inline-arrow-dark {
+  display: none;
+}
+
+.inline-arrow, .inline-arrow-dark {
+  height: 14.5px;
+  vertical-align: baseline;
+}
+
+.show-dark-arrow-on-hover:hover .inline-arrow-dark {
+  display: inline-block;
+}
+
+.show-dark-arrow-on-hover:hover .inline-arrow {
+  display: none;
+}
+
+:root, html, body {
+  background-color: #000000;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logoblock {
+  margin-left: -0.25em;
+}
+
+.navver {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navver li {
+  display: inline;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+nav {
+  padding: 32px 0 32px 0;
+}
+
+.sidesblock {
+  max-width: 640px;
+  opacity: 0;
+  transition: 0.2s ease-out;
+  animation: fadein 0.3s both;
+  animation-delay: 0.15s;
+}
+
+body {
+  background-color: #000000;
+}
+
+.post h1 {
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0 0 32px 0;
+}
+
+.post small, .post h1 small, .postslist h2 > small, .faded {
+  color: #888888;
+}
+
+.post p + h2 {
+  margin: 38px 0 18px 0;
+}
+
+/* .post > h2 {
+  background-color: #ffb900;
+  color: #000000;
+  display: inline-block;
+  padding: 2px 10px 2px 20px;
+  margin-left: -20px !important;
+} */
+
+.post h2, .postslist h2 {
+  line-height: 1.5;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.post {
+  margin-bottom: 86px;
+}
+
+.postslist > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.postslist {
+  padding-top: 24px;
+  border-top: 1pt solid #323232;
+}
+
+.postslist > ul li {
+  margin-bottom: 24px;
+}
+
+.jumbotitle {
+  margin-bottom: 26px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+a:hover, a:focus {
+  outline: none !important;
+  background-color: #ffb900;
+  color: #000000;
+  font-weight: 700;
+}
+
+a {
+  font-weight: 700;
+}
+
+.postslist h2 {
+  display: inline;
+  line-height: 1.5 !important;
+}
+
+.postslist > ul li a {
+  display: inline;
+  line-height: 1.5;
+}
+
+.postslist > ul li a:hover *, .postslist > ul li a:focus * {
+  color: inherit !important;
+}
+
+a.selected {
+  color: #000000;
+  background-color: #ffb900;
+}
+
+*::selection {
+  opacity: 1;
+  color: #000000;
+  background-color: #ffb900;
+}
+
+.shh {
+  color: transparent;
+}
+
+.postslist .postlink, .postslist .postlink:hover {
+  display: block;
+  line-height: inherit !important;
+  color: inherit;
+  background-color: transparent;
+}
+
+.postslist .postlink:hover >h2, .postslist .postlink:focus >h2 {
+  background-color: #ffb900;
+  color: #000000 !important;
+}
+
+.postslist .postlink:hover {
+  color: #000000;
+}
+
+a.selected:focus {
+  outline: 1.5pt solid #ffb900 !important;
+  outline-offset: 2pt;
+}
+
+@media (max-width: 700px) {
+  .sidesblock {
+      padding: 0 20px;
+      font-size: 16px !important;
+  }
+  *, :root, body, h1, h2, h3, h4, h5, h6, html {
+      font-size: 1rem !important;
+  }
+  .inline-arrow {
+    height: 12px;
+  }
+}
+
+.post img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
